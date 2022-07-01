@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&family=Roboto:wght@400;500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <h2>Translator</h2>
+    <div id="container">
+        <div id="input">
+            <!-- <button onclick="translator()">Translate</button> -->
+            <select name="" id="inputselect">
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <option value="az">Azerbaijani</option>
+                <option value="zh">Chinese</option>
+                <option value="cs">Czech</option>
+                <option value="nl">Dutch</option>
+                <option value="fi">Finnish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="hi">Hindi</option>
+                <option value="hu">Hungarian</option>
+                <option value="id">Indonesian</option>
+                <option value="ga">Irish</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="pl">Polish</option>
+                <option value="pt">Portuguese</option>
+                <option value="ru">Russian</option>
+                <option value="es">Spanish</option>
+                <option value="sv">Swedish</option>
+                <option value="tr">Turkish</option>
+                <option value="uk">Ukranian</option>
+                <option value="vi">Vietnamese</option>
+            </select>
+            <hr>
+
+            <textarea name="" id="text-input" cols="30" rows="10" oninput="debounce(translator,1000)"></textarea>
+
+        </div>
+        <div id="output">
+            <!-- <button>Translate</button> -->
+            <select name="" id="outputselect">
+                <option value="hi">Hindi</option>
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <option value="az">Azerbaijani</option>
+                <option value="zh">Chinese</option>
+                <option value="cs">Czech</option>
+                <option value="nl">Dutch</option>
+                <option value="fi">Finnish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="hu">Hungarian</option>
+                <option value="id">Indonesian</option>
+                <option value="ga">Irish</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="pl">Polish</option>
+                <option value="pt">Portuguese</option>
+                <option value="ru">Russian</option>
+                <option value="es">Spanish</option>
+                <option value="sv">Swedish</option>
+                <option value="tr">Turkish</option>
+                <option value="uk">Ukranian</option>
+                <option value="vi">Vietnamese</option>
+            </select>
+            <hr>
+            <div id="translatedoutput"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="script.js"></script>
